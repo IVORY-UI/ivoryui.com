@@ -1,10 +1,6 @@
 $( document ).ready(function() {
-
-  console.log('$ is ready');
-
   // When a nav item is clicked
   $('.nav-item a').click(function(e) {
-    console.log('nav item clicked ', e);
     e.preventDefault();
 
     if ( $('.burger-container').hasClass('menu-opened') && $('.doc-nav').hasClass('menu-opened') ) {
@@ -25,5 +21,4 @@ $( document ).ready(function() {
     $('.burger-container').toggleClass('menu-opened');
     $('.doc-nav').toggleClass('menu-opened');
   });
-
 });
