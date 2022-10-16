@@ -1,0 +1,12 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+  /* background-color: #0A1120; */
+  color: var(--iv-gray-7);
+}

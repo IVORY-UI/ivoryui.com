@@ -45,7 +45,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="./styles/ivory.min.css" />
+    <link rel="stylesheet" href="./styles/common.css" />
     <link rel="stylesheet" href="./styles/docs-styles.css" />
 
 
@@ -103,17 +105,8 @@
             </li>
           </ul>
 
-          <cite class="nav-section-title">Components</cite>
+          <cite class="nav-section-title">Form & Elements</cite>
           <ul class="nav-section">
-            <li class="nav-item">
-              <a href="#" data-target="alerts">Alerts</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" data-target="badges">Badges</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" data-target="breadcrumb">Breadcrumb</a>
-            </li>
             <li class="nav-item">
               <a href="#" data-target="buttons">Buttons</a>
             </li>
@@ -127,22 +120,44 @@
               <a href="#" data-target="form">Form</a>
             </li>
             <li class="nav-item">
-              <a href="#" data-target="grid">Grid</a>
+              <a href="#" data-target="input">Input</a>
             </li>
             <li class="nav-item">
-              <a href="#" data-target="input">Input</a>
+              <a href="#" data-target="radio">Radio</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" data-target="tabler">Radio Tabler</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" data-target="select">Select</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" data-target="textarea">Textarea</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" data-target="toggle">Toggle Switch</a>
+            </li>
+          </ul>
+
+          <cite class="nav-section-title">Components</cite>
+          <ul class="nav-section">
+            <li class="nav-item">
+              <a href="#" data-target="alerts">Alerts</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" data-target="badges">Badges</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" data-target="breadcrumb">Breadcrumb</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" data-target="grid">Grid</a>
             </li>
             <li class="nav-item">
               <a href="#" data-target="list">List</a>
             </li>
             <li class="nav-item">
               <a href="#" data-target="progress">Progress</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" data-target="radio">Radio</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" data-target="select">Select</a>
             </li>
             <li class="nav-item">
               <a href="#" data-target="spinner">Spinner</a>
@@ -152,12 +167,6 @@
             </li>
             <li class="nav-item">
               <a href="#" data-target="table">Table</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" data-target="textarea">Textarea</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" data-target="toggle">Toggle Switch</a>
             </li>
             <li class="nav-item">
               <a href="#" data-target="tooltip">Tooltip</a>
@@ -1819,113 +1828,134 @@
           <h1 class="section-title">Radio</h1>
           <div class="section-body">
 
-            <div class="iv-radio">
-              <input type="radio" id="radio1" name="myradio1" />
-              <label for="radio1">Radio Option 1</label>
-            </div>
+            <div class="row">
+              <div class="col">
+                <div class="iv-radio">
+                  <input type="radio" id="radio1" name="myradio1" />
+                  <label for="radio1">Radio Option 1</label>
+                </div>
 
-            <div class="iv-radio">
-              <input type="radio" id="radio2" name="myradio1" checked />
-              <label for="radio2">Radio Option 2</label>
-            </div>
-
-            <div style="margin-bottom: 2rem;">
-              <pre>
-                <code>
-                  &lt;div class="iv-radio"&gt;<br/>
-                  &nbsp;&nbsp;&lt;input type="radio" id="radio1" name="myradio1" /&gt;<br/>
-                  &nbsp;&nbsp;&lt;label for="radio1">Radio Option 1&lt;label&gt;<br/>
-                  &lt;div&gt;<br/>
-                  &lt;div class="iv-radio"&gt;<br/>
-                  &nbsp;&nbsp;&lt;input type="radio" id="radio2" name="myradio1" checked /&gt;<br/>
-                  &nbsp;&nbsp;&lt;label for="radio2">Radio Option 2&lt;/label&gt;<br/>
-                  &lt;/div&gt;
-                </code>
-              </pre>
+                <div class="iv-radio">
+                  <input type="radio" id="radio2" name="myradio1" checked />
+                  <label for="radio2">Radio Option 2</label>
+                </div>
+              </div>
+              <div class="col">
+                <div style="margin-bottom: 2rem;">
+                  <pre>
+                    <code>
+                      &lt;div class="iv-radio"&gt;<br/>
+                      &nbsp;&nbsp;&lt;input type="radio" id="radio1" name="myradio1" /&gt;<br/>
+                      &nbsp;&nbsp;&lt;label for="radio1">Radio Option 1&lt;label&gt;<br/>
+                      &lt;div&gt;<br/>
+                      &lt;div class="iv-radio"&gt;<br/>
+                      &nbsp;&nbsp;&lt;input type="radio" id="radio2" name="myradio1" checked /&gt;<br/>
+                      &nbsp;&nbsp;&lt;label for="radio2">Radio Option 2&lt;/label&gt;<br/>
+                      &lt;/div&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
             </div>
 
             <h6 class="section-subtitle">Disabled</h6>
-            <p>The radio can be disabled by the <span class="code">disabled</span> attribute on the radio input</p>
-            <div class="iv-radio">
-              <input type="radio" id="radio3" name="myradio2" disabled />
-              <label for="radio3">Radio Option 1</label>
+            <div class="row">
+              <div class="col">
+                <p>The radio can be disabled by the <span class="code">disabled</span> attribute on the radio input</p>
+                <div class="iv-radio">
+                  <input type="radio" id="radio3" name="myradio2" disabled />
+                  <label for="radio3">Radio Option 1</label>
+                </div>
+
+                <div class="iv-radio">
+                  <input type="radio" id="radio4" name="myradio2" disabled />
+                  <label for="radio4">Radio Option 2</label>
+                </div>
+              </div>
+              <div class="col">
+                <div style="margin-bottom: 2rem;">
+                  <pre>
+                    <code>
+                      &lt;div class="iv-radio"&gt;<br/>
+                      &nbsp;&nbsp;&lt;input type="radio" id="radio3" name="myradio2" disabled /&gt;<br/>
+                      &nbsp;&nbsp;&lt;label for="radio3">Radio Option 1&lt;label&gt;<br/>
+                      &lt;div&gt;<br/>
+                      &lt;div class="iv-radio"&gt;<br/>
+                      &nbsp;&nbsp;&lt;input type="radio" id="radio4" name="myradio2" disabled /&gt;<br/>
+                      &nbsp;&nbsp;&lt;label for="radio4">Radio Option 2&lt;/label&gt;<br/>
+                      &lt;/div&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
             </div>
 
-            <div class="iv-radio">
-              <input type="radio" id="radio4" name="myradio2" disabled />
-              <label for="radio4">Radio Option 2</label>
-            </div>
+          </div>
+        </section>
 
-            <div style="margin-bottom: 2rem;">
-              <pre>
-                <code>
-                  &lt;div class="iv-radio"&gt;<br/>
-                  &nbsp;&nbsp;&lt;input type="radio" id="radio3" name="myradio2" disabled /&gt;<br/>
-                  &nbsp;&nbsp;&lt;label for="radio3">Radio Option 1&lt;label&gt;<br/>
-                  &lt;div&gt;<br/>
-                  &lt;div class="iv-radio"&gt;<br/>
-                  &nbsp;&nbsp;&lt;input type="radio" id="radio4" name="myradio2" disabled /&gt;<br/>
-                  &nbsp;&nbsp;&lt;label for="radio4">Radio Option 2&lt;/label&gt;<br/>
-                  &lt;/div&gt;
-                </code>
-              </pre>
-            </div>
-
-            <h4>Tabler Radio</h4>
+        <!--Radio Tabler-->
+        <section id="tabler" class="docs-section">
+          <h1 class="section-title">Radio Tabler</h1>
+          <div class="section-body">
             <p>Tabler radio buttons are useful in various scenarios, especially in e-commerce applications.</p>
-            <h6>Example:</h6>
-            <div style="margin-bottom: 2rem;">
-              <p class="p-bold">Select Size</p>
-              <div class="iv-tabler">
-                <div class="tabler-item">
-                  <input type="radio" class="tabler-input" id="tblr1" name="mytblr1" value="S" />
-                  <label class="tabler-button" for="tblr1">S</label>
+
+            <div class="row">
+              <div class="col">
+                <h6>Example:</h6>
+                <div style="margin-bottom: 2rem;">
+                  <p class="p-bold">Select Size</p>
+                  <div class="iv-tabler">
+                    <div class="tabler-item">
+                      <input type="radio" class="tabler-input" id="tblr1" name="mytblr1" value="S" />
+                      <label class="tabler-button" for="tblr1">S</label>
+                    </div>
+                    <div class="tabler-item">
+                      <input type="radio" class="tabler-input" id="tblr2" name="mytblr1" value="M" />
+                      <label class="tabler-button" for="tblr2">M</label>
+                    </div>
+                    <div class="tabler-item">
+                      <input type="radio" class="tabler-input" id="tblr3" name="mytblr1" value="L" />
+                      <label class="tabler-button" for="tblr3">L</label>
+                    </div>
+                    <div class="tabler-item">
+                      <input type="radio" class="tabler-input" id="tblr4" name="mytblr1" value="XL" />
+                      <label class="tabler-button" for="tblr4">XL</label>
+                    </div>
+                  </div>
                 </div>
-                <div class="tabler-item">
-                  <input type="radio" class="tabler-input" id="tblr2" name="mytblr1" value="M" />
-                  <label class="tabler-button" for="tblr2">M</label>
-                </div>
-                <div class="tabler-item">
-                  <input type="radio" class="tabler-input" id="tblr3" name="mytblr1" value="L" />
-                  <label class="tabler-button" for="tblr3">L</label>
-                </div>
-                <div class="tabler-item">
-                  <input type="radio" class="tabler-input" id="tblr4" name="mytblr1" value="XL" />
-                  <label class="tabler-button" for="tblr4">XL</label>
+                <div style="margin-bottom: 2rem;">
+                  <p class="p-bold">Select Color</p>
+                  <div class="iv-tabler">
+                    <div class="tabler-item">
+                      <input type="radio" class="tabler-input" id="tblrbk" name="mytblr2" value="Black" />
+                      <label class="tabler-button" for="tblrbk">Black</label>
+                    </div>
+                    <div class="tabler-item">
+                      <input type="radio" class="tabler-input" id="tblrwh" name="mytblr2" value="White" />
+                      <label class="tabler-button" for="tblrwh">White</label>
+                    </div>
+                    <div class="tabler-item">
+                      <input type="radio" class="tabler-input" id="tblrbl" name="mytblr2" value="Blue" />
+                      <label class="tabler-button" for="tblrbl">Blue</label>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-
-            <div style="margin-bottom: 2rem;">
-              <p class="p-bold">Select Color</p>
-              <div class="iv-tabler">
-                <div class="tabler-item">
-                  <input type="radio" class="tabler-input" id="tblrbk" name="mytblr2" value="Black" />
-                  <label class="tabler-button" for="tblrbk">Black</label>
-                </div>
-                <div class="tabler-item">
-                  <input type="radio" class="tabler-input" id="tblrwh" name="mytblr2" value="White" />
-                  <label class="tabler-button" for="tblrwh">White</label>
-                </div>
-                <div class="tabler-item">
-                  <input type="radio" class="tabler-input" id="tblrbl" name="mytblr2" value="Blue" />
-                  <label class="tabler-button" for="tblrbl">Blue</label>
+              <div class="col">
+                <div style="margin-bottom: 2rem;">
+                  <pre>
+                    <code>
+                      &lt;div class="iv-tabler"&gt;<br/>
+                      &nbsp;&nbsp;&lt;div class="tabler-item"&gt;<br/>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="radio" class="tabler-input" id="t1" name="my-tabler" value="Black" /&gt;<br/>
+                      &nbsp;&nbsp;&nbsp;&nbsp;&lt;label class="tabler-button" for="t1"&gt;Black&lt;/label&gt;<br/>
+                      &nbsp;&nbsp;&lt;/div&gt;<br/>
+                      &nbsp;&nbsp;...<br/>
+                      &lt;/div&gt;
+                    </code>
+                  </pre>
                 </div>
               </div>
-            </div>
-
-            <div style="margin-bottom: 2rem;">
-              <pre>
-                <code>
-                  &lt;div class="iv-tabler"&gt;<br/>
-                  &nbsp;&nbsp;&lt;div class="tabler-item"&gt;<br/>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="radio" class="tabler-input" id="t1" name="my-tabler" value="Black" /&gt;<br/>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;label class="tabler-button" for="t1"&gt;Black&lt;/label&gt;<br/>
-                  &nbsp;&nbsp;&lt;/div&gt;<br/>
-                  &nbsp;&nbsp;...<br/>
-                  &lt;/div&gt;
-                </code>
-              </pre>
             </div>
           </div>
         </section>

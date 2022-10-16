@@ -42,6 +42,7 @@
     <meta name="theme-color" content="#ffffff">
 
     <link rel="stylesheet" href="./styles/ivory.min.css" />
+    <link rel="stylesheet" href="./styles/common.css" />
     <link rel="stylesheet" href="./styles/intro-styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -59,12 +60,20 @@
   <body>
 
     <section class="hero">
+      <header class="main-head">
+        <div class="nav">
+          <div class="avatar">
+            <a href="#">IVORY UI</a>
+          </div>
+        </div>
+      </header>
+
       <div class="inner">
         <div class="row">
           <div class="col-8">
             <div class="highlight">
-              <h1 class="bold-700">Develop your web pages faster and easier.</h1>
-              <h6>Highly extensible and powerful CSS framework, prebuilt with grid system, elegant design and flexible components helps
+              <h1 class="text-700" style="font-size:3rem; line-height:3.5rem;">Develop your web pages faster and easier.</h1>
+              <h6 class="text-300">Highly extensible and powerful CSS framework, prebuilt with grid system, elegant design and flexible components helps
                 you to develop powerful interfaces.</h6>
               <div class="guided">
                 <a class="nav-item" href="./docs.html">Get Started</a>
@@ -72,23 +81,37 @@
             </div>
           </div>
           <div class="col-4">
-            <img src="./assets/logo.png" alt="IVORY" width="100%" />
+            <img src="./assets/hero-old.png" alt="IVORY" width="100%" />
           </div>
         </div>
       </div>
-    </section>
 
+      <section class="evolve">
+        <div class="inner">
+          <div class="feat">
+            <h4 class="text-600">Ready to use</h4>
+            <p>IVORY gives you a collection of beautiful, fully responsive & ready-to-use CSS components to build your pages faster and easier.
+              It will help you find the perfect starting point for what you want to build.</p>
+          </div>
 
-    <section class="evolve">
-      <div class="inner">
-        <div class="row">
-          <div class="col-12 col-md-6">
-            <h4>Ready to use</h4>
-            <p>IVORY UI is a collection of beautiful, fully responsive & ready-to-use UI components. It will help you find the perfect
-              starting point for what you want to build.</p>
+          <div class="feat tilt-right">
+            <h4 class="text-600">Everything responsive</h4>
+            <p>Wrestling with a bunch of complex media queries in your CSS sucks, so Tailwind lets you build responsive designs right in your HTML instead.
+              Throw a screen size in front of literally any utility class and watch it magically apply at a specific breakpoint.</p>
+          </div>
+
+          <div class="feat">
+            <h4 class="text-600">Extensible & Enhancable</h4>
+            <p>IVORY provides you the flexibility to enhance and tweak as you need.</p>
+          </div>
+
+          <div class="feat tilt-right">
+            <h4 class="text-600"></h4>
+            <p></p>
           </div>
         </div>
-      </div>
+      </section>
+
     </section>
 
     <section style="margin: 30px 0;">
