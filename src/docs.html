@@ -1065,18 +1065,18 @@
             <div style="margin-bottom: 2rem;">
               <p>
                 <span class="iv-badge" style="margin-right: 15px;">5</span>
-                <span class="iv-badge success" style="margin-right: 15px;">5</span>
-                <span class="iv-badge warning" style="margin-right: 15px;">5</span>
-                <span class="iv-badge error">5</span>
+                <span class="iv-badge iv-badge-success" style="margin-right: 15px;">5</span>
+                <span class="iv-badge iv-badge-warning" style="margin-right: 15px;">5</span>
+                <span class="iv-badge iv-badge-error">5</span>
               </p>
             </div>
             <div style="margin-bottom: 3rem;">
               <pre>
                 <code>
                   &lt;span class="iv-badge"&gt;5&lt;/span&gt;<br/>
-                  &lt;span class="iv-badge success"&gt;5&lt;/span&gt;<br/>
-                  &lt;span class="iv-badge warning"&gt;5&lt;/span&gt;<br/>
-                  &lt;span class="iv-badge error"&gt;5&lt;/span&gt;
+                  &lt;span class="iv-badge iv-badge-success"&gt;5&lt;/span&gt;<br/>
+                  &lt;span class="iv-badge iv-badge-warning"&gt;5&lt;/span&gt;<br/>
+                  &lt;span class="iv-badge iv-badge-error"&gt;5&lt;/span&gt;
                 </code>
               </pre>
             </div>
@@ -1084,23 +1084,23 @@
             <h6>Basic Badge</h6>
             <div style="margin-bottom: 2rem;">
               <span class="badge-head iv-badge-group">
-                <sup class="iv-badge error">9</sup>
+                <sup class="iv-badge iv-badge-error">9</sup>
               </span>
               <span class="badge-head iv-badge-group">
-                <sup class="iv-badge error">99</sup>
+                <sup class="iv-badge iv-badge-error">99</sup>
               </span>
               <span class="badge-head iv-badge-group">
-                <sup class="iv-badge error">999</sup>
+                <sup class="iv-badge iv-badge-error">999</sup>
               </span>
               <span class="badge-head iv-badge-group">
-                <sup class="iv-badge error">999+</sup>
+                <sup class="iv-badge iv-badge-error">999+</sup>
               </span>
             </div>
             <div style="margin-bottom: 3rem;">
               <pre>
                 <code>
                   &lt;span class="iv-badge-group"&gt;<br/>
-                  &nbsp;&nbsp;&lt;sup class="iv-badge error"&gt;9&lt;/sup&gt;<br/>
+                  &nbsp;&nbsp;&lt;sup class="iv-badge iv-badge-error"&gt;Text&lt;/sup&gt;<br/>
                   &lt;/span&gt;
                 </code>
               </pre>
@@ -1110,7 +1110,7 @@
             <div style="margin-bottom: 2rem;">
               <span class="badge-link iv-badge-group">
                 <a href="...">link</a>
-                <sup class="iv-badge red dot"></sup>
+                <sup class="iv-badge iv-badge-error dot"></sup>
               </span>
               </p>
             </div>
@@ -1119,7 +1119,7 @@
                 <code>
                   &lt;span class="iv-badge-group"&gt;<br/>
                   &nbsp;&nbsp;...<br/>
-                  &nbsp;&nbsp;&lt;sup class="iv-badge red dot"&gt;&lt;/sup&gt;<br/>
+                  &nbsp;&nbsp;&lt;sup class="iv-badge iv-badge-error iv-badge-dot"&gt;&lt;/sup&gt;<br/>
                   &lt;/span&gt;
                 </code>
               </pre>
@@ -1428,12 +1428,12 @@
             <p>In IVORY standard form, the label and the form element will be arranged one after one in a row manner.</p>
             <div style="margin-bottom: 4rem;">
               <div class="iv-form" style="max-width: 500px;">
-                <div class="form-field">
-                  <label class="form-label">Username</label>
+                <div class="iv-field">
+                  <label class="iv-label">Username</label>
                   <input class="iv-input" type="text" />
                 </div>
-                <div class="form-field">
-                  <label class="form-label">Password</label>
+                <div class="iv-field">
+                  <label class="iv-label">Password</label>
                   <input class="iv-input" type="password" />
                 </div>
                 <button class="iv-btn btn-primary">Signin</button>
@@ -1443,21 +1443,21 @@
             <h6 class="section-subtitle">Horizontally Aligned Form</h6>
             <p>In horizontal form, label & form element are aligned side-by-side.</p>
             <div style="margin-bottom: 4rem;">
-              <div class="iv-form form-horizontal" style="max-width: 640px;">
-                <div class="form-field">
-                  <label class="form-label">Firstname</label>
+              <div class="iv-form iv-form-horizontal" style="max-width: 640px;">
+                <div class="iv-field">
+                  <label class="iv-label">Firstname</label>
                   <input class="iv-input" type="text" />
                 </div>
-                <div class="form-field">
-                  <label class="form-label">Lastname</label>
+                <div class="iv-field">
+                  <label class="iv-label">Lastname</label>
                   <input class="iv-input" type="text" />
                 </div>
-                <div class="form-field">
-                  <label class="form-label">Email</label>
+                <div class="iv-field">
+                  <label class="iv-label">Email</label>
                   <input class="iv-input" type="text" />
                 </div>
-                <div class="form-field">
-                  <label class="form-label">Password</label>
+                <div class="iv-field">
+                  <label class="iv-label">Password</label>
                   <input class="iv-input" type="password" />
                 </div>
                 <button class="iv-btn btn-primary">Register</button>
@@ -1634,11 +1634,11 @@
 
           <div style="margin-bottom: 2rem;">
             <h6 class="section-subtitle">Unordered List</h6>
-            <p>For Unordered List you can use the addon classes like: <span class="code">.disc</span>, <span class="code">.circle</span>,
-              <span class="code">.square</span> to display the respective list styles. Here is an example:</p>
+            <p>For Unordered List you can use the addon classes like: <span class="code">.iv-list-disc</span>, <span class="code">.iv-list-circle</span>,
+              <span class="code">.iv-list-square</span> to display the respective list styles. Here is an example:</p>
             <div class="row">
               <div class="col-12 col-md-6">
-                <ul class="iv-list disc">
+                <ul class="iv-list iv-list-disc">
                   <li>Amsterdam</li>
                   <li>Manali</li>
                   <li>Monaco</li>
@@ -1650,7 +1650,7 @@
               <div class="col-12 col-md-6">
                 <pre>
                   <code>
-                    &lt;ul class="iv-list disc"&gt;<br/>
+                    &lt;ul class="iv-list iv-list-disc"&gt;<br/>
                     &nbsp;&nbsp;&lt;li&gt;Amsterdam&lt;/li&gt;<br/>
                     &nbsp;&nbsp;&lt;li&gt;Manali&lt;/li&gt;<br/>
                     &nbsp;&nbsp;&lt;li&gt;Monaco&lt;/li&gt;<br/>
@@ -1666,11 +1666,11 @@
 
           <div style="margin-bottom: 2rem;">
             <h6 class="section-subtitle">Ordered List</h6>
-            <p>For Ordered List you can use the addon classes like: <span class="code">.decimal</span>, <span class="code">.lower-alpha</span>,
-              <span class="code">.upper-roman</span> to display the respective list styles. Here is an example:</p>
+            <p>For Ordered List you can use the addon classes like: <span class="code">.iv-list-decimal</span>, <span class="code">.iv-list-lower-alpha</span>,
+              <span class="code">.iv-list-upper-roman</span> to display the respective list styles. Here is an example:</p>
             <div class="row">
               <div class="col-12 col-md-6">
-                <ol class="iv-list decimal">
+                <ol class="iv-list iv-list-decimal">
                   <li>One</li>
                   <li>Two</li>
                   <li>Three</li>
@@ -1681,7 +1681,7 @@
               <div class="col-12 col-md-6">
                 <pre>
                   <code>
-                    &lt;ol class="iv-list decimal"&gt;<br/>
+                    &lt;ol class="iv-list iv-list-decimal"&gt;<br/>
                     &nbsp;&nbsp;&lt;li&gt;One&lt;/li&gt;<br/>
                     &nbsp;&nbsp;&lt;li&gt;Two&lt;/li&gt;<br/>
                     &nbsp;&nbsp;&lt;li&gt;Three&lt;/li&gt;<br/>
@@ -1739,10 +1739,10 @@
 
           <p>Styled lists will be used for various documentation purposes. </p>
 
-          <h6>Styled list 1</h6>
+          <h6>Styled list</h6>
           <div class="row" style="margin-bottom: 2rem;">
             <div class="col-12 col-md-6">
-              <ul class="iv-styled-list1">
+              <ul class="iv-styled-list">
                 <li>Head</li>
                 <li>Shoulders</li>
                 <li>Knees</li>
@@ -1752,35 +1752,11 @@
             <div class="col-12 col-md-6">
               <pre>
                 <code>
-                  &lt;ul class="iv-styled-list1"&gt;<br/>
+                  &lt;ul class="iv-styled-list"&gt;<br/>
                   &nbsp;&nbsp;&lt;li&gt;Head&lt;/li&gt;<br/>
                   &nbsp;&nbsp;&lt;li&gt;Shoulders&lt;/li&gt;<br/>
                   &nbsp;&nbsp;&lt;li&gt;Knees&lt;/li&gt;<br/>
                   &nbsp;&nbsp;&lt;li&gt;Toes&lt;/li&gt;<br/>
-                  &lt;/ul&gt;
-                </code>
-              </pre>
-            </div>
-          </div>
-
-          <h6>Styled list 2</h6>
-          <div class="row" style="margin-bottom: 2rem;">
-            <div class="col-12 col-md-6">
-              <ul class="iv-styled-list2">
-                <li>Lorem dolor amet sit</li>
-                <li>Lorem ipsum dolor sit amet consecutor adipiscingLorem ipsum dolor sit amet</li>
-                <li>Lorem ipsum dolor sit amet</li>
-                <li>Lorem ipsum dolor sit amet consecutor adipiscingLorem ipsum dolor sit amet</li>
-              </ul>
-            </div>
-            <div class="col-12 col-md-6">
-              <pre>
-                <code>
-                  &lt;ul class="iv-styled-list2"&gt;<br/>
-                  &nbsp;&nbsp;&lt;li&gt;One&lt;/li&gt;<br/>
-                  &nbsp;&nbsp;&lt;li&gt;Two&lt;/li&gt;<br/>
-                  &nbsp;&nbsp;&lt;li&gt;Three&lt;/li&gt;<br/>
-                  &nbsp;&nbsp;&lt;li&gt;Four&lt;/li&gt;<br/>
                   &lt;/ul&gt;
                 </code>
               </pre>
@@ -2241,22 +2217,22 @@
             </div>
 
             <div style="margin-bottom: 2rem;">
-              <p>Here is an example for top-left tooltip. <a class="iv-tooltip">Hover me <span class="tooltip-content tooltip-xs top-left">A tooltip provides a short description of a
+              <p>Here is an example for top-left tooltip. <a class="iv-tooltip">Hover me <span class="tooltip-content tooltip-top-left tooltip-xs">A tooltip provides a short description of a
                 UI element.</span></a> to preview.</p>
             </div>
 
             <div style="margin-bottom: 2rem;">
-              <p>Here is an example for top-right tooltip. <a class="iv-tooltip">Hover me <span class="tooltip-content tooltip-xs top-right">A tooltip provides a short description of a
+              <p>Here is an example for top-right tooltip. <a class="iv-tooltip">Hover me <span class="tooltip-content tooltip-top-right tooltip-xs">A tooltip provides a short description of a
                 UI element.</span></a> to preview.</p>
             </div>
 
             <div style="margin-bottom: 2rem;">
-              <p>Here is an example for bottom-right tooltip. <a class="iv-tooltip">Hover me <span class="tooltip-content tooltip-xs bottom-right">A tooltip provides a short description of a
+              <p>Here is an example for bottom-right tooltip. <a class="iv-tooltip">Hover me <span class="tooltip-content tooltip-bottom-right tooltip-xs">A tooltip provides a short description of a
                 UI element.</span></a> to preview.</p>
             </div>
 
             <div style="margin-bottom: 2rem;">
-              <p>Here is an example for bottom-left tooltip. <a class="iv-tooltip">Hover me <span class="tooltip-content tooltip-xs bottom-left">A tooltip provides a short description of a
+              <p>Here is an example for bottom-left tooltip. <a class="iv-tooltip">Hover me <span class="tooltip-content tooltip-bottom-left tooltip-xs">A tooltip provides a short description of a
                 UI element.</span></a> to preview.</p>
             </div>
 
