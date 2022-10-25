@@ -45,7 +45,7 @@
 .doc-nav nav {
 	width: 100%;
 	height: auto;
-	border-right: 1px solid #e8e8e8
+	border-right: 1px solid var(--iv-gray-3);
 }
 .doc-nav .nav-section {
   margin-bottom: 1rem;
@@ -65,6 +65,7 @@
 	padding-left: 3.5rem;
 	font-size: .875rem;
 	line-height: 2rem;
+  font-weight: 300;
 	color: #424242;
 }
 .doc-nav .nav-section li:hover a {
@@ -110,6 +111,9 @@
 .docs-section .section-body {
 
 }
+.border-left {
+  border-left: 1px solid var(--iv-gray-4);
+}
 .docs-section .section-body .inner{
 	width: 100%;
 	max-width: 960px;
@@ -128,7 +132,7 @@
 }
 .type-system th {
 	font-size: 1rem;
-	line-height: 2.5rem;
+	line-height: 2rem;
   font-weight: 500;
 	text-align: left;
 	vertical-align: middle;
@@ -160,16 +164,22 @@
 	justify-content: space-evenly;
 	width: 100%
 }
+.color-palette-panel .color-cell {
+  font-size: 12px;
+  line-height: 18px;
+  text-transform: lowercase;
+}
 .color-palette-panel .color-cell .color-cell-bg {
-	width: 4rem;
+	width: 4.5rem;
 	height: 3rem;
 	border-radius: 4px;
 }
+.color-palette-panel .color-cell .color-var {
+  display: block;
+}
 .color-palette-panel .color-cell .color-hex {
+  display: block;
 	font-family: 'Fira Code', monospace;
-	font-size: 12px;
-	line-height: 18px;
-	text-transform: lowercase;
 }
 .example-grid {
 	margin-bottom: 1rem
@@ -183,8 +193,8 @@
 	height: 2.625rem;
 	line-height: 2.625rem;
 	margin-bottom: 1rem;
-	background-color: #DEE2E6;
-	border: 1px solid #CED4DA;
+	background-color: var(--iv-gray-2);
+	border: 1px solid var(--iv-gray-4);
 }
 .code {
 	font-family: 'Fira Code', monospace;
@@ -194,8 +204,8 @@
 }
 pre {
 	font-family: 'Fira Code', monospace;
-	background-color: #343A40;
-	color: #fafafa;
+	background-color: var(--iv-gray-8);
+	color: var(--iv-gray-3);
 	padding: 0.5rem;
 	font-size: 0.815rem;
 	line-height: 1.5rem;
@@ -255,7 +265,32 @@ pre {
 	line-height: 20px;
 	color: #424242
 }
-
+.badge-head {
+	position: relative;
+	margin: 0 30px 0 0;
+	width: 42px;
+	height: 42px;
+	border-radius: 2px;
+	background: #eee;
+	vertical-align: middle;
+}
+.badge-link {
+	font-size: 14px;
+	line-height: 18px;
+}
+.getstart .inficon {
+  width: 32px;
+  height: 32px;
+}
+.start-guide-left {
+  padding-right: 2rem;
+}
+.start-guide-right {
+  padding-left: 2rem;
+}
+p code {
+	font-family: 'Fira Code', monospace;
+}
 
 @media only screen and (max-width: 960px) {
 	.burger-container {
@@ -350,20 +385,4 @@ pre {
 		padding-left: 1rem;
 		padding-right: 1rem;
 	}
-}
-.badge-head {
-	position: relative;
-	margin: 0 30px 0 0;
-	width: 42px;
-	height: 42px;
-	border-radius: 2px;
-	background: #eee;
-	vertical-align: middle;
-}
-.badge-link {
-	font-size: 14px;
-	line-height: 18px;
-}
-p code {
-	font-family: 'Fira Code', monospace;
 }

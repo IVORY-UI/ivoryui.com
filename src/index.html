@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>IVORY - Modern CSS framework to build your web pages faster and easier.</title>
+    <title>Modern CSS framework to build your web pages faster and easier.</title>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="description" content="Modern CSS framework to build your web pages faster and easier.">
-    <meta name="keywords" content="ivory, ui, CSS, framework, front-end, frontend, responsive, web development">
+    <meta name="keywords" content="css, scss, components, responsive, css framework, scss framework, grid, design system, ivory, ivory ui">
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href="http://ivoryui.com/">
 
@@ -63,53 +63,110 @@
       <header class="main-head">
         <div class="nav">
           <div class="avatar">
-            <a href="#">IVORY UI</a>
+            <a href="#">
+              <img src="./assets/full_logo.svg" alt="IVORY UI" />
+            </a>
           </div>
         </div>
       </header>
 
       <div class="inner">
         <div class="row">
-          <div class="col-8">
+          <div class="col-sm-12 col-md-6 col-lg-8">
             <div class="highlight">
               <h1 class="text-700" style="font-size:3rem; line-height:3.5rem;">Develop your web pages faster and easier.</h1>
-              <h6 class="text-300">Highly extensible and powerful CSS framework, prebuilt with grid system, elegant design and flexible components helps
-                you to develop powerful interfaces.</h6>
+              <h6 class="text-300">Highly extensible, modular and open-source CSS framework. Prebuilt with grid system and flexible components helps
+                you to develop powerful interfaces. </h6>
               <div class="guided">
                 <a class="nav-item" href="./docs.html">Get Started</a>
               </div>
             </div>
           </div>
-          <div class="col-4">
+          <div class="col-sm-12 col-md-6 col-lg-4">
             <img src="./assets/hero-old.png" alt="IVORY" width="100%" />
           </div>
         </div>
       </div>
-
+      <div class="blend">
+        <div class="blend-image"></div>
+      </div>
     </section>
 
     <section class="evolve">
       <div class="inner">
-        <div class="feat">
-          <h4 class="text-600">Ready to use</h4>
-          <p>IVORY gives you a collection of beautiful, fully responsive & ready-to-use CSS components to build your pages faster and easier.
-            It will help you find the perfect starting point for what you want to build.</p>
+        <div class="row mb-4">
+          <div class="col-sm-12 col-md-6">
+            <h4 class="text-600">No JavaScript required</h4>
+            <p class="text-16 text-300">IVORY is a CSS only framework, so it can be integrated in any JS environment.</p>
+          </div>
+          <div class="col-sm-12 col-md-6">
+            <ul class="feat-stack">
+              <li>
+                <svg fill="none" height="37" viewBox="0 0 188 200">
+                  <path d="M94 0L0.899994 33.2L15.1 156.3L94 200L172.9 156.3L187.1 33.2L94 0Z" fill="var(--iv-gray-7)"></path>
+                  <path d="M94 0V22.2V22.1V123.4V200L172.9 156.3L187.1 33.2L94 0Z" fill="var(--iv-gray-9)"></path>
+                  <path d="M94 22.1L35.8 152.6H57.5L69.2 123.4H118.6L130.3 152.6H152L94 22.1ZM111 105.4H77L94 64.5L111 105.4Z" fill="#ffffff"></path>
+                </svg>
+              </li>
+              <li>
+                <svg fill="none" height="34" stroke="var(--iv-gray-9)" viewBox="0 0 24 22">
+                  <path d="M12 12.807a2.05 2.05 0 100-4.1 2.05 2.05 0 000 4.1z"></path>
+                  <path d="M12 14.957c6.075 0 11-1.88 11-4.2 0-2.32-4.925-4.2-11-4.2s-11 1.88-11 4.2c0 2.32 4.925 4.2 11 4.2z"></path>
+                  <path d="M8.363 12.857c3.037 5.261 7.128 8.586 9.137 7.426 2.009-1.16 1.175-6.365-1.863-11.626C12.6 3.396 8.51.071 6.5 1.231 4.491 2.39 5.325 7.596 8.363 12.857z"></path>
+                  <path d="M8.363 8.657C5.325 13.918 4.49 19.124 6.5 20.283c2.009 1.16 6.1-2.165 9.137-7.426C18.675 7.596 19.51 2.391 17.5 1.231 15.491.07 11.4 3.396 8.363 8.657z"></path>
+                </svg>
+              </li>
+              <li>
+                <svg fill="none" height="32" viewBox="0 0 262 227">
+                  <path d="M161.101 7.33846e-05L130.877 52.3508L100.652 7.33846e-05H0L130.877 226.688L261.753 7.33846e-05H161.101Z" fill="var(--iv-gray-9)"></path>
+                  <path d="M161.101 7.44816e-05L130.877 52.3508L100.652 7.44816e-05H52.3507L130.877 136.01L209.403 7.44816e-05H161.101Z" fill="var(--iv-gray-7)"></path>
+                </svg>
+              </li>
+              <li>
+                <svg fill="none" height="34" viewBox="0 0 33 32" width="34">
+                  <circle cx="16.05" cy="16" fill="var(--iv-gray-9)" r="16"></circle>
+                  <path clip-rule="evenodd" d="M16.348 20.48c-2.306.034-2.073-1.525-2.073-1.525s8.453-3.017 6.15-8.975c-1.037-1.532-2.24-2.013-3.944-1.978-1.704.035-3.819 1.118-5.188 4.323-.653 1.53-.892 2.98-1.025 4.078 0 0-1.48.315-2.282-.382-.801-.697-1.214 0-1.214 0s-1.375 1.828-.005 2.386c1.368.557 3.506.817 3.506.817h-.001c.197.975.984 3.131 2.435 3.953C14.16 24 14.926 24 16.481 24c4.611 0 8.878-4.254 8.878-5.593 0-1.34-1.067-1.34-1.6-1.34-.134 0-.33.177-.633.451-.9.815-2.748 2.49-6.778 2.961zm-2.474-4.216c.101-4.146 2.707-5.958 3.61-5.053.902.907.568 2.858-1.137 4.077-1.704 1.219-2.473.976-2.473.976z" fill="#ffffff" fill-rule="evenodd"></path>
+                </svg>
+              </li>
+              <li>
+                <svg fill="none" height="36" viewBox="0 0 94 112">
+                  <path clip-rule="evenodd" d="M41.464 4.983c14.85-9.46 35.39-5.05 45.79 9.83v.08a31.9 31.9 0 015.45 24.12 30.126 30.126 0 01-4.48 11.18 31.52 31.52 0 013.11 20.23 30 30 0 01-13.52 20l-26.08 16.55c-14.85 9.46-35.39 5.05-45.79-9.83a31.862 31.862 0 01-5.45-24.12 29.94 29.94 0 014.47-11.18 31.53 31.53 0 01-3.1-20.24 29.895 29.895 0 0113.52-20l26.08-16.62zm-14.967 92.97a20.73 20.73 0 0012.417.63 19.176 19.176 0 005.3-2.33l26.09-16.62a18 18 0 008.13-12.06 19.157 19.157 0 00-3.28-14.5 20.701 20.701 0 00-22.23-8.24 18.614 18.614 0 00-5.3 2.33l-10 6.34a6 6 0 01-1.6.7 6.248 6.248 0 01-6.65-2.48 5.837 5.837 0 01-1-4.38 5.45 5.45 0 012.45-3.63l26.09-16.59a5.719 5.719 0 011.6-.7 6.23 6.23 0 016.66 2.41 5.86 5.86 0 011.06 3.88l-.09 1 1 .29a33.781 33.781 0 0110.2 5.1l1.33 1 .5-1.5c.257-.796.464-1.608.62-2.43a19.137 19.137 0 00-3.28-14.5 20.71 20.71 0 00-22.23-8.25 19.054 19.054 0 00-5.26 2.32l-26.12 16.62a18 18 0 00-8.13 12.06 19.159 19.159 0 003.25 14.5 20.72 20.72 0 0022.2 8.24c1.87-.5 3.655-1.283 5.29-2.32l10-6.35a5.719 5.719 0 011.6-.7 6.25 6.25 0 016.7 2.48 5.771 5.771 0 011 4.37 5.417 5.417 0 01-2.45 3.64l-26.04 16.62a5.852 5.852 0 01-1.6.7 6.25 6.25 0 01-6.7-2.48 5.9 5.9 0 01-1.09-3.85l.09-1-1-.29a33.778 33.778 0 01-10.17-5.06l-1.34-1-.49 1.5a17.022 17.022 0 00-.62 2.41 19.139 19.139 0 003.27 14.5 20.728 20.728 0 009.823 7.62z" fill="var(--iv-gray-8)" fill-rule="evenodd"></path>
+                </svg>
+              </li>
+            </ul>
+          </div>
         </div>
 
-        <div class="feat tilt-right">
-          <h4 class="text-600">Everything responsive</h4>
-          <p>Wrestling with a bunch of complex media queries in your CSS sucks, so Tailwind lets you build responsive designs right in your HTML instead.
-            Throw a screen size in front of literally any utility class and watch it magically apply at a specific breakpoint.</p>
+        <div class="row mb-4">
+          <div class="col-sm-12 col-md-6">
+
+          </div>
+          <div class="col-sm-12 col-md-6">
+            <h4 class="text-600">Ready to use</h4>
+            <p class="text-16 text-300">IVORY gives you a collection of beautiful, responsive & fully functional components ready to be put to use.
+              Helps you to build your pages faster and easier.</p>
+          </div>
         </div>
 
-        <div class="feat">
-          <h4 class="text-600">Extensible & Enhancable</h4>
-          <p>IVORY provides you the flexibility to enhance and tweak as you need.</p>
+        <div class="row mb-4">
+          <div class="col-sm-12 col-md-6">
+            <h4 class="text-600">Everything responsive</h4>
+            <p class="text-16 text-300">Don't worry about writing complex media queries in your CSS. IVORY focuses mobile first and helps you to build
+              responsive pages easily.</p>
+          </div>
+          <div class="col-sm-12 col-md-6">
+            
+          </div>
         </div>
 
-        <div class="feat tilt-right">
-          <h4 class="text-600"></h4>
-          <p></p>
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+
+          </div>
+          <div class="col-sm-12 col-md-6">
+            <h4 class="text-600">Flexible & Extensible</h4>
+            <p class="text-16 text-300">IVORY is completely flexible to style your pages. It's easy to enhance or tweak any component as you need.</p>
+          </div>
         </div>
       </div>
     </section>

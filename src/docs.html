@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="description" content="Simple CSS framework makes your UI development faster and easier.">
-    <meta name="keywords" content="ivory, ui, CSS, framework, front-end, frontend, responsive, web development">
+    <meta name="keywords" content="css, scss, components, responsive, css framework, scss framework, grid, design system, ivory, ivory ui">
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href="http://ivoryui.com/">
 
@@ -88,10 +88,10 @@
           <cite class="nav-section-title">Intro</cite>
           <ul class="nav-section">
             <li class="nav-item">
-              <a href="#" data-target="intro" class="active">Story of IVORY</a>
+              <a href="#" data-target="intro">Story of IVORY</a>
             </li>
             <li class="nav-item">
-              <a href="#" data-target="getstart">Installation</a>
+              <a href="#" data-target="getstart" class="active">Get Started</a>
             </li>
           </ul>
 
@@ -102,6 +102,13 @@
             </li>
             <li class="nav-item">
               <a href="#" data-target="typo">Typography</a>
+            </li>
+          </ul>
+
+          <cite class="nav-section-title">Visual</cite>
+          <ul class="nav-section">
+            <li class="nav-item">
+              <a href="#" data-target="grid">Grid</a>
             </li>
           </ul>
 
@@ -151,9 +158,6 @@
               <a href="#" data-target="breadcrumb">Breadcrumb</a>
             </li>
             <li class="nav-item">
-              <a href="#" data-target="grid">Grid</a>
-            </li>
-            <li class="nav-item">
               <a href="#" data-target="list">List</a>
             </li>
             <li class="nav-item">
@@ -177,7 +181,7 @@
 
       <div class="docs-container">
         <!--Intro-->
-        <section id="intro" class="docs-section section-active">
+        <section id="intro" class="docs-section">
           <section class="hero">
             <img src="./assets/logo.png" alt="" width="200" alt="IVORY UI" />
           </section>
@@ -230,41 +234,97 @@
         </section>
 
         <!--Get Started-->
-        <section id="getstart" class="docs-section">
-          <h1 class="section-title">Installation</h1>
-          <div class="section-body">
-            <div style="margin-bottom: 2rem;">
-              <h6 class="section-subtitle">Using NPM</h6>
-              <p class="subtitle2">Run the below command to install via npm</p>
-              <pre>
-                <code>
-                  npm i ivoryui-ivory
-                </code>
-              </pre>
-              <p class="subtitle2">Add the following path to your project</p>
-              <pre>
-                <code>
-                  node_modules/ivoryui-ivory/ivory.min.css
-                </code>
-              </pre>
+        <section id="getstart" class="docs-section getstart section-active">
+          <div class="row no-gutter">
+            <div class="col-sm-12 col-md-6">
+              <div class="start-guide-left">
+                <div class="inficon mb-1">
+                  <svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet">
+                    <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="var(--iv-gray-7)" stroke="none">
+                      <path d="M1285 4494 c-968 -484 -1254 -631 -1268 -652 -16 -25 -17 -100 -15
+                      -1264 l3 -1238 25 -24 c40 -38 2498 -1316 2531 -1316 16 0 66 20 112 44 45 24
+                      602 315 1237 646 635 331 1166 613 1180 626 l25 24 3 1235 c2 1099 1 1239 -13
+                      1265 -14 27 -176 110 -1266 655 -777 389 -1260 625 -1277 624 -15 0 -579 -276
+                      -1277 -625z m2387 -155 l1103 -551 -468 -234 -467 -234 -1107 554 -1108 553
+                      460 231 c253 127 466 231 473 231 6 1 508 -247 1114 -550z m-82 -1139 c0 -3
+                      -232 -121 -515 -263 l-515 -257 -1107 554 -1108 553 520 261 520 260 1102
+                      -552 c607 -303 1103 -553 1103 -556z m-2255 -147 l1115 -558 0 -1102 c0 -607
+                      -3 -1103 -6 -1103 -3 0 -507 262 -1120 582 l-1114 581 0 1079 c0 593 2 1078 5
+                      1078 3 0 507 -251 1120 -557z m3575 -522 l0 -1078 -1114 -582 c-612 -319
+                      -1116 -581 -1120 -581 -3 0 -6 496 -6 1103 l0 1102 525 263 c289 144 527 262
+                      530 262 3 0 5 -225 5 -500 0 -549 0 -554 59 -584 38 -20 64 -20 102 0 59 30
+                      59 29 59 641 l0 558 473 237 c259 130 475 237 480 237 4 1 7 -484 7 -1078z"/>
+                    </g>
+                  </svg>
+                </div>
+                <h5>Install via package manager</h5>
+                <p>Run the below command to install IVORY UI package via npm.</p>
+                <pre>
+                  <code>
+                    npm i ivoryui-ivory
+                  </code>
+                </pre>
+              </div>
             </div>
-
-            <div style="margin-bottom: 2rem;">
-              <h6 class="section-subtitle">Using UNPKG CDN</h6>
-              <pre>
-                <code>
-                  &lt;link rel="stylesheet" href="https://unpkg.com/ivoryui-ivory/ivory.min.css" /&gt;
-                </code>
-              </pre>
-            </div>
-
-            <div style="margin-bottom: 2rem;">
-              <h6 class="section-subtitle">Using JSDelivr CDN</h6>
-              <pre>
-                <code>
-                  &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ivoryui-ivory@6.0.0/ivory.min.css" /&gt;
-                </code>
-              </pre>
+            <div class="col-sm-12 col-md-6 border-left">
+              <div class="start-guide-right">
+                <div class="inficon mb-1">
+                  <svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet">
+                    <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" fill="var(--iv-gray-7)" stroke="none">
+                      <path d="M2370 5113 c-371 -35 -653 -114 -961 -269 -406 -203 -782 -548 -1029
+                      -944 -179 -286 -309 -655 -362 -1025 -17 -118 -17 -512 0 -630 42 -295 120
+                      -553 242 -800 137 -280 272 -468 494 -691 221 -220 412 -357 681 -489 188 -92
+                      309 -137 500 -185 500 -126 1002 -102 1490 71 150 53 408 183 540 271 560 374
+                      952 942 1095 1588 33 150 50 291 57 465 15 426 -73 832 -263 1214 -124 250
+                      -263 447 -458 648 -214 222 -430 379 -711 518 -296 146 -572 225 -900 255
+                      -102 9 -333 11 -415 3z m80 -663 l0 -440 -420 0 c-231 0 -420 3 -420 8 0 4 29
+                      65 65 136 197 392 448 642 725 721 25 7 46 14 48 14 1 1 2 -197 2 -439z m405
+                      373 c221 -110 427 -344 590 -669 36 -71 65 -132 65 -136 0 -5 -189 -8 -420 -8
+                      l-420 0 0 439 0 439 58 -15 c31 -8 89 -31 127 -50z m650 -126 c174 -77 358
+                      -190 520 -317 85 -67 278 -257 334 -328 l33 -42 -316 2 -316 3 -50 113 c-90
+                      207 -212 413 -323 544 -29 33 -60 71 -69 83 l-18 22 63 -22 c34 -13 98 -39
+                      142 -58z m-1695 69 c0 -3 -25 -33 -55 -68 -120 -136 -251 -353 -346 -571 l-49
+                      -112 -316 -3 -316 -2 30 37 c221 279 603 556 952 689 86 33 100 38 100 30z
+                      m-530 -992 c0 -3 -11 -44 -25 -92 -68 -238 -135 -682 -135 -901 0 -36 -3 -76
+                      -6 -88 l-6 -23 -439 0 -439 0 0 53 c1 105 39 328 85 484 49 170 140 382 231
+                      540 l19 33 358 0 c196 0 357 -3 357 -6z m1170 -549 l0 -555 -555 0 -555 0 0
+                      63 c0 243 72 682 159 975 l22 72 464 0 465 0 0 -555z m1171 483 c86 -290 159
+                      -734 159 -975 l0 -63 -555 0 -555 0 0 555 0 555 465 0 464 0 22 -72z m990 -30
+                      c160 -304 256 -622 276 -915 l6 -93 -440 0 -441 0 -6 23 c-3 12 -6 54 -6 92
+                      -1 219 -66 649 -134 893 -14 50 -26 93 -26 96 0 4 161 6 358 6 l359 0 54 -102z
+                      m-3497 -1250 c3 -13 6 -53 6 -89 0 -219 67 -663 135 -901 14 -48 25 -89 25
+                      -92 0 -3 -161 -6 -358 -6 l-358 0 -55 103 c-156 288 -256 621 -276 915 l-6 92
+                      440 0 441 0 6 -22z m1336 -533 l0 -555 -465 0 -464 0 -22 73 c-87 292 -159
+                      731 -159 974 l0 63 555 0 555 0 0 -555z m1326 424 c-16 -306 -70 -620 -155
+                      -906 l-22 -73 -464 0 -465 0 0 555 0 555 556 0 557 0 -7 -131z m1114 79 c0
+                      -29 -7 -98 -15 -153 -40 -282 -126 -542 -265 -803 l-54 -102 -358 0 c-197 0
+                      -358 2 -358 6 0 3 12 46 26 96 69 247 133 677 134 900 0 42 3 83 6 92 5 14 54
+                      16 445 16 l439 0 0 -52z m-3480 -1406 c93 -215 227 -436 345 -571 31 -35 54
+                      -65 52 -68 -14 -13 -293 113 -437 197 -216 127 -470 343 -612 523 l-30 37 316
+                      -2 316 -3 50 -113z m1040 -321 l0 -439 -37 9 c-66 17 -146 52 -218 93 -106 62
+                      -283 243 -379 387 -66 100 -206 359 -206 382 0 4 189 7 420 7 l420 0 0 -439z
+                      m1060 433 c0 -22 -138 -278 -202 -375 -87 -131 -229 -287 -323 -354 -78 -56
+                      -186 -109 -257 -128 l-58 -15 0 439 0 439 420 0 c231 0 420 -3 420 -6z m838
+                      -46 c-241 -290 -588 -539 -935 -672 -51 -20 -97 -36 -104 -36 -6 0 14 27 45
+                      60 65 71 164 211 231 328 46 80 144 285 164 343 l10 29 316 0 317 0 -44 -52z"/>
+                    </g>
+                  </svg>
+                </div>
+                <h5>Include via CDN</h5>
+                <p>You can include IVORY minified CSS file from CDNs jsDelivr or unpkg.</p>
+                <p class="text-12 text-600">Using UNPKG CDN</p>
+                <pre style="max-width: 500px;">
+                  <code>
+                    &lt;link rel="stylesheet" href="https://unpkg.com/ivoryui-ivory/ivory.min.css" /&gt;
+                  </code>
+                </pre>
+                <p class="text-12 text-600">Using JSDelivr CDN</p>
+                <pre style="max-width: 500px;">
+                  <code>
+                    &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ivoryui-ivory@6.0.0/ivory.min.css" /&gt;
+                  </code>
+                </pre>
+              </div>
             </div>
           </div>
         </section>
@@ -276,6 +336,8 @@
             <div style="margin-bottom: 2rem;">
               <p>IVORY provides an out-of-the-box color palette, each color has a adequate purpose. The color system designed in a way to help
                 create a theme that is harmonious, ensures accessible text, and distinguishes UI elements and surfaces from one another.</p>
+
+              <p>Use our global :root variables, <code>var(--iv-colorName)</code> syntax to use the colors from the below color palette.</p>
             </div>
 
             <div class="inner">
@@ -287,42 +349,52 @@
                   <div class="color-palette-panel">
                     <div class="color-cell">
                       <div class="color-cell-bg" style="background-color: var(--iv-gray-0)"></div>
+                      <span class="color-var">gray-0</span>
                       <span class="color-hex">#F8F9FA</span>
                     </div>
                     <div class="color-cell">
                       <div class="color-cell-bg" style="background-color:  var(--iv-gray-1)"></div>
+                      <span class="color-var">gray-1</span>
                       <span class="color-hex">#F1F3F5</span>
                     </div>
                     <div class="color-cell">
                       <div class="color-cell-bg" style="background-color: var(--iv-gray-2)"></div>
+                      <span class="color-var">gray-2</span>
                       <span class="color-hex">#E9ECEF</span>
                     </div>
                     <div class="color-cell">
                       <div class="color-cell-bg" style="background-color: var(--iv-gray-3)"></div>
+                      <span class="color-var">gray-3</span>
                       <span class="color-hex">#DEE2E6</span>
                     </div>
                     <div class="color-cell">
                       <div class="color-cell-bg" style="background-color: var(--iv-gray-4)"></div>
+                      <span class="color-var">gray-4</span>
                       <span class="color-hex">#CED4DA</span>
                     </div>
                     <div class="color-cell">
                       <div class="color-cell-bg" style="background-color: var(--iv-gray-5)"></div>
+                      <span class="color-var">gray-5</span>
                       <span class="color-hex">#ADB5BD</span>
                     </div>
                     <div class="color-cell">
                       <div class="color-cell-bg" style="background-color: var(--iv-gray-6)"></div>
+                      <span class="color-var">gray-6</span>
                       <span class="color-hex">#868E96</span>
                     </div>
                     <div class="color-cell">
                       <div class="color-cell-bg" style="background-color: var(--iv-gray-7)"></div>
+                      <span class="color-var">gray-7</span>
                       <span class="color-hex">#495057</span>
                     </div>
                     <div class="color-cell">
                       <div class="color-cell-bg" style="background-color: var(--iv-gray-8)"></div>
+                      <span class="color-var">gray-8</span>
                       <span class="color-hex">#343A40</span>
                     </div>
                     <div class="color-cell">
                       <div class="color-cell-bg" style="background-color: var(--iv-gray-9)"></div>
+                      <span class="color-var">gray-9</span>
                       <span class="color-hex">#212529</span>
                     </div>
                   </div>
@@ -337,42 +409,52 @@
                   <div class="color-palette-panel">
                     <div class="color-cell">
                       <div class="color-cell-bg" style="background-color: var(--iv-red-0)"></div>
+                      <span class="color-var">red-0</span>
                       <span class="color-hex">#FFF1F5</span>
                     </div>
                     <div class="color-cell">
                       <div class="color-cell-bg" style="background-color: var(--iv-red-1)"></div>
+                      <span class="color-var">red-1</span>
                       <span class="color-hex">#FFE8E8</span>
                     </div>
                     <div class="color-cell">
                       <div class="color-cell-bg" style="background-color: var(--iv-red-2)"></div>
+                      <span class="color-var">red-2</span>
                       <span class="color-hex">#FFCCC9</span>
                     </div>
                     <div class="color-cell">
                       <div class="color-cell-bg" style="background-color: var(--iv-red-3)"></div>
+                      <span class="color-var">red-3</span>
                       <span class="color-hex">#FFA8A8</span>
                     </div>
                     <div class="color-cell">
                       <div class="color-cell-bg" style="background-color: var(--iv-red-4)"></div>
+                      <span class="color-var">red-4</span>
                       <span class="color-hex">#FF8787</span>
                     </div>
                     <div class="color-cell">
                       <div class="color-cell-bg" style="background-color: var(--iv-red-5)"></div>
+                      <span class="color-var">red-5</span>
                       <span class="color-hex">#FF6B6B</span>
                     </div>
                     <div class="color-cell">
                       <div class="color-cell-bg" style="background-color: var(--iv-red-6)"></div>
+                      <span class="color-var">red-6</span>
                       <span class="color-hex">#FA5252</span>
                     </div>
                     <div class="color-cell">
                       <div class="color-cell-bg" style="background-color: var(--iv-red-7)"></div>
+                      <span class="color-var">red-7</span>
                       <span class="color-hex">#F03E3E</span>
                     </div>
                     <div class="color-cell">
                       <div class="color-cell-bg" style="background-color: var(--iv-red-8)"></div>
+                      <span class="color-var">red-8</span>
                       <span class="color-hex">#E03131</span>
                     </div>
                     <div class="color-cell">
                       <div class="color-cell-bg" style="background-color: var(--iv-red-9)"></div>
+                      <span class="color-var">red-9</span>
                       <span class="color-hex">#C82F2F</span>
                     </div>
                   </div>
@@ -387,42 +469,52 @@
                   <div class="color-palette-panel">
                     <div class="color-cell">
                       <div class="color-cell-bg" style="background-color: var(--iv-pink-0)"></div>
+                      <span class="color-var">pink-0</span>
                       <span class="color-hex">#FFF0F6</span>
                     </div>
                     <div class="color-cell">
                       <div class="color-cell-bg" style="background-color: var(--iv-pink-1)"></div>
+                      <span class="color-var">pink-1</span>
                       <span class="color-hex">#FFDEEB</span>
                     </div>
                     <div class="color-cell">
                       <div class="color-cell-bg" style="background-color: var(--iv-pink-2)"></div>
+                      <span class="color-var">pink-2</span>
                       <span class="color-hex">#FCC2D7</span>
                     </div>
                     <div class="color-cell">
                       <div class="color-cell-bg" style="background-color: var(--iv-pink-3)"></div>
+                      <span class="color-var">pink-3</span>
                       <span class="color-hex">#FAA2C1</span>
                     </div>
                     <div class="color-cell">
                       <div class="color-cell-bg" style="background-color: var(--iv-pink-4)"></div>
+                      <span class="color-var">pink-4</span>
                       <span class="color-hex">#F783AC</span>
                     </div>
                     <div class="color-cell">
                       <div class="color-cell-bg" style="background-color: var(--iv-pink-5)"></div>
+                      <span class="color-var">pink-5</span>
                       <span class="color-hex">#F06595</span>
                     </div>
                     <div class="color-cell">
                       <div class="color-cell-bg" style="background-color: var(--iv-pink-6)"></div>
+                      <span class="color-var">pink-6</span>
                       <span class="color-hex">#E64980</span>
                     </div>
                     <div class="color-cell">
                       <div class="color-cell-bg" style="background-color: var(--iv-pink-7)"></div>
+                      <span class="color-var">pink-7</span>
                       <span class="color-hex">#D6336C</span>
                     </div>
                     <div class="color-cell">
                       <div class="color-cell-bg" style="background-color: var(--iv-pink-8)"></div>
+                      <span class="color-var">pink-8</span>
                       <span class="color-hex">#C2255C</span>
                     </div>
                     <div class="color-cell">
                       <div class="color-cell-bg" style="background-color: var(--iv-pink-9)"></div>
+                      <span class="color-var">pink-9</span>
                       <span class="color-hex">#A61E4D</span>
                     </div>
                   </div>
@@ -437,42 +529,52 @@
                   <div class="color-palette-panel">
                     <div class="color-cell">
                       <div class="color-cell-bg" style="background-color: var(--iv-purple-0)"></div>
+                      <span class="color-var">purple-0</span>
                       <span class="color-hex">#F8F0FC</span>
                     </div>
                     <div class="color-cell">
                       <div class="color-cell-bg" style="background-color: var(--iv-purple-1)"></div>
+                      <span class="color-var">purple-1</span>
                       <span class="color-hex">#F3D9FA</span>
                     </div>
                     <div class="color-cell">
                       <div class="color-cell-bg" style="background-color: var(--iv-purple-2)"></div>
+                      <span class="color-var">purple-2</span>
                       <span class="color-hex">#EEBEFA</span>
                     </div>
                     <div class="color-cell">
                       <div class="color-cell-bg" style="background-color: var(--iv-purple-3)"></div>
+                      <span class="color-var">purple-3</span>
                       <span class="color-hex">#E599F7</span>
                     </div>
                     <div class="color-cell">
                       <div class="color-cell-bg" style="background-color: var(--iv-purple-4)"></div>
+                      <span class="color-var">purple-4</span>
                       <span class="color-hex">#DA77F2</span>
                     </div>
                     <div class="color-cell">
                       <div class="color-cell-bg" style="background-color: var(--iv-purple-5)"></div>
+                      <span class="color-var">purple-5</span>
                       <span class="color-hex">#CC5DE8</span>
                     </div>
                     <div class="color-cell">
                       <div class="color-cell-bg" style="background-color: var(--iv-purple-6)"></div>
+                      <span class="color-var">purple-6</span>
                       <span class="color-hex">#BE4BDB</span>
                     </div>
                     <div class="color-cell">
                       <div class="color-cell-bg" style="background-color: var(--iv-purple-7)"></div>
+                      <span class="color-var">purple-7</span>
                       <span class="color-hex">#AE3EC9</span>
                     </div>
                     <div class="color-cell">
                       <div class="color-cell-bg" style="background-color: var(--iv-purple-8)"></div>
+                      <span class="color-var">purple-8</span>
                       <span class="color-hex">#9C36B5</span>
                     </div>
                     <div class="color-cell">
                       <div class="color-cell-bg" style="background-color: var(--iv-purple-9)"></div>
+                      <span class="color-var">purple-9</span>
                       <span class="color-hex">#862E9C</span>
                     </div>
                   </div>
@@ -487,42 +589,52 @@
                   <div class="color-palette-panel">
                     <div class="color-cell">
                       <div class="color-cell-bg" style="background-color: var(--iv-indigo-0)"></div>
+                      <span class="color-var">indigo-0</span>
                       <span class="color-hex">#EDF2FF</span>
                     </div>
                     <div class="color-cell">
                       <div class="color-cell-bg" style="background-color: var(--iv-indigo-1)"></div>
+                      <span class="color-var">indigo-1</span>
                       <span class="color-hex">#DBE4FF</span>
                     </div>
                     <div class="color-cell">
                       <div class="color-cell-bg" style="background-color: var(--iv-indigo-2)"></div>
+                      <span class="color-var">indigo-2</span>
                       <span class="color-hex">#BAC8FF</span>
                     </div>
                     <div class="color-cell">
                       <div class="color-cell-bg" style="background-color: var(--iv-indigo-3)"></div>
+                      <span class="color-var">indigo-3</span>
                       <span class="color-hex">#91A7FF</span>
                     </div>
                     <div class="color-cell">
                       <div class="color-cell-bg" style="background-color: var(--iv-indigo-4)"></div>
+                      <span class="color-var">indigo-4</span>
                       <span class="color-hex">#748FFC</span>
                     </div>
                     <div class="color-cell">
                       <div class="color-cell-bg" style="background-color: var(--iv-indigo-5)"></div>
+                      <span class="color-var">indigo-5</span>
                       <span class="color-hex">#5C7CFA</span>
                     </div>
                     <div class="color-cell">
                       <div class="color-cell-bg" style="background-color: var(--iv-indigo-6)"></div>
+                      <span class="color-var">indigo-6</span>
                       <span class="color-hex">#4C6EF5</span>
                     </div>
                     <div class="color-cell">
                       <div class="color-cell-bg" style="background-color: var(--iv-indigo-7)"></div>
+                      <span class="color-var">indigo-7</span>
                       <span class="color-hex">#4263EB</span>
                     </div>
                     <div class="color-cell">
                       <div class="color-cell-bg" style="background-color: var(--iv-indigo-8)"></div>
+                      <span class="color-var">indigo-8</span>
                       <span class="color-hex">#3B5BDB</span>
                     </div>
                     <div class="color-cell">
                       <div class="color-cell-bg" style="background-color: var(--iv-indigo-9)"></div>
+                      <span class="color-var">indigo-9</span>
                       <span class="color-hex">#364FC7</span>
                     </div>
                   </div>
@@ -537,42 +649,52 @@
                   <div class="color-palette-panel">
                     <div class="color-cell">
                       <div class="color-cell-bg" style="background-color: var(--iv-blue-0)"></div>
+                      <span class="color-var">blue-0</span>
                       <span class="color-hex">#EAF5FF</span>
                     </div>
                     <div class="color-cell">
                       <div class="color-cell-bg" style="background-color: var(--iv-blue-1)"></div>
+                      <span class="color-var">blue-1</span>
                       <span class="color-hex">#D7EAFC</span>
                     </div>
                     <div class="color-cell">
                       <div class="color-cell-bg" style="background-color: var(--iv-blue-2)"></div>
+                      <span class="color-var">blue-2</span>
                       <span class="color-hex">#A6D2FF</span>
                     </div>
                     <div class="color-cell">
                       <div class="color-cell-bg" style="background-color: var(--iv-blue-3)"></div>
+                      <span class="color-var">blue-3</span>
                       <span class="color-hex">#74B9FF</span>
                     </div>
                     <div class="color-cell">
                       <div class="color-cell-bg" style="background-color: var(--iv-blue-4)"></div>
+                      <span class="color-var">blue-4</span>
                       <span class="color-hex">#5CACFC</span>
                     </div>
                     <div class="color-cell">
                       <div class="color-cell-bg" style="background-color: var(--iv-blue-5)"></div>
+                      <span class="color-var">blue-5</span>
                       <span class="color-hex">#40A0FF</span>
                     </div>
                     <div class="color-cell">
                       <div class="color-cell-bg" style="background-color: var(--iv-blue-6)"></div>
+                      <span class="color-var">blue-6</span>
                       <span class="color-hex">#2285F6</span>
                     </div>
                     <div class="color-cell">
                       <div class="color-cell-bg" style="background-color: var(--iv-blue-7)"></div>
+                      <span class="color-var">blue-7</span>
                       <span class="color-hex">#0875E1</span>
                     </div>
                     <div class="color-cell">
                       <div class="color-cell-bg" style="background-color: var(--iv-blue-8)"></div>
+                      <span class="color-var">blue-8</span>
                       <span class="color-hex">#005CB9</span>
                     </div>
                     <div class="color-cell">
                       <div class="color-cell-bg" style="background-color: var(--iv-blue-9)"></div>
+                      <span class="color-var">blue-9</span>
                       <span class="color-hex">#004387</span>
                     </div>
                   </div>
@@ -587,42 +709,52 @@
                   <div class="color-palette-panel">
                     <div class="color-cell">
                       <div class="color-cell-bg" style="background-color: var(--iv-cyan-0)"></div>
+                      <span class="color-var">cyan-0</span>
                       <span class="color-hex">#E3FAFC</span>
                     </div>
                     <div class="color-cell">
                       <div class="color-cell-bg" style="background-color: var(--iv-cyan-1)"></div>
+                      <span class="color-var">cyan-1</span>
                       <span class="color-hex">#C5F6Fa</span>
                     </div>
                     <div class="color-cell">
                       <div class="color-cell-bg" style="background-color: var(--iv-cyan-2)"></div>
+                      <span class="color-var">cyan-2</span>
                       <span class="color-hex">#99E9F2</span>
                     </div>
                     <div class="color-cell">
                       <div class="color-cell-bg" style="background-color: var(--iv-cyan-3)"></div>
+                      <span class="color-var">cyan-3</span>
                       <span class="color-hex">#66D9E8</span>
                     </div>
                     <div class="color-cell">
                       <div class="color-cell-bg" style="background-color: var(--iv-cyan-4)"></div>
+                      <span class="color-var">cyan-4</span>
                       <span class="color-hex">#3BC9DB</span>
                     </div>
                     <div class="color-cell">
                       <div class="color-cell-bg" style="background-color: var(--iv-cyan-5)"></div>
+                      <span class="color-var">cyan-5</span>
                       <span class="color-hex">#22B8CF</span>
                     </div>
                     <div class="color-cell">
                       <div class="color-cell-bg" style="background-color: var(--iv-cyan-6)"></div>
+                      <span class="color-var">cyan-6</span>
                       <span class="color-hex">#15AABF</span>
                     </div>
                     <div class="color-cell">
                       <div class="color-cell-bg" style="background-color: var(--iv-cyan-7)"></div>
+                      <span class="color-var">cyan-7</span>
                       <span class="color-hex">#1098AD</span>
                     </div>
                     <div class="color-cell">
                       <div class="color-cell-bg" style="background-color: var(--iv-cyan-8)"></div>
+                      <span class="color-var">cyan-8</span>
                       <span class="color-hex">#0C8599</span>
                     </div>
                     <div class="color-cell">
                       <div class="color-cell-bg" style="background-color: var(--iv-cyan-9)"></div>
+                      <span class="color-var">cyan-9</span>
                       <span class="color-hex">#0B7285</span>
                     </div>
                   </div>
@@ -637,42 +769,52 @@
                   <div class="color-palette-panel">
                     <div class="color-cell">
                       <div class="color-cell-bg" style="background-color: var(--iv-teal-0)"></div>
+                      <span class="color-var">teal-0</span>
                       <span class="color-hex">#E6FCF5</span>
                     </div>
                     <div class="color-cell">
                       <div class="color-cell-bg" style="background-color: var(--iv-teal-1)"></div>
+                      <span class="color-var">teal-1</span>
                       <span class="color-hex">#C3FAE8</span>
                     </div>
                     <div class="color-cell">
                       <div class="color-cell-bg" style="background-color: var(--iv-teal-2)"></div>
+                      <span class="color-var">teal-2</span>
                       <span class="color-hex">#96F2D7</span>
                     </div>
                     <div class="color-cell">
                       <div class="color-cell-bg" style="background-color: var(--iv-teal-3)"></div>
+                      <span class="color-var">teal-3</span>
                       <span class="color-hex">#63E6BE</span>
                     </div>
                     <div class="color-cell">
                       <div class="color-cell-bg" style="background-color: var(--iv-teal-4)"></div>
+                      <span class="color-var">teal-4</span>
                       <span class="color-hex">#38D9A9</span>
                     </div>
                     <div class="color-cell">
                       <div class="color-cell-bg" style="background-color: var(--iv-teal-5)"></div>
+                      <span class="color-var">teal-5</span>
                       <span class="color-hex">#20C997</span>
                     </div>
                     <div class="color-cell">
                       <div class="color-cell-bg" style="background-color: var(--iv-teal-6)"></div>
+                      <span class="color-var">teal-6</span>
                       <span class="color-hex">#12B886</span>
                     </div>
                     <div class="color-cell">
                       <div class="color-cell-bg" style="background-color: var(--iv-teal-7)"></div>
+                      <span class="color-var">teal-7</span>
                       <span class="color-hex">#0CA678</span>
                     </div>
                     <div class="color-cell">
                       <div class="color-cell-bg" style="background-color: var(--iv-teal-8)"></div>
+                      <span class="color-var">teal-8</span>
                       <span class="color-hex">#099268</span>
                     </div>
                     <div class="color-cell">
                       <div class="color-cell-bg" style="background-color: var(--iv-teal-9)"></div>
+                      <span class="color-var">teal-9</span>
                       <span class="color-hex">#087F5B</span>
                     </div>
                   </div>
@@ -687,42 +829,52 @@
                   <div class="color-palette-panel">
                     <div class="color-cell">
                       <div class="color-cell-bg" style="background-color: var(--iv-green-0)"></div>
+                      <span class="color-var">green-0</span>
                       <span class="color-hex">#F6FFED</span>
                     </div>
                     <div class="color-cell">
                       <div class="color-cell-bg" style="background-color: var(--iv-green-1)"></div>
+                      <span class="color-var">green-1</span>
                       <span class="color-hex">#E8FCCF</span>
                     </div>
                     <div class="color-cell">
                       <div class="color-cell-bg" style="background-color: var(--iv-green-2)"></div>
+                      <span class="color-var">green-2</span>
                       <span class="color-hex">#D9F7BE</span>
                     </div>
                     <div class="color-cell">
                       <div class="color-cell-bg" style="background-color: var(--iv-green-3)"></div>
+                      <span class="color-var">green-3</span>
                       <span class="color-hex">#B7EB8F</span>
                     </div>
                     <div class="color-cell">
                       <div class="color-cell-bg" style="background-color: var(--iv-green-4)"></div>
+                      <span class="color-var">green-4</span>
                       <span class="color-hex">#95DE64</span>
                     </div>
                     <div class="color-cell">
                       <div class="color-cell-bg" style="background-color: var(--iv-green-5)"></div>
+                      <span class="color-var">green-5</span>
                       <span class="color-hex">#84D750</span>
                     </div>
                     <div class="color-cell">
                       <div class="color-cell-bg" style="background-color: var(--iv-green-6)"></div>
+                      <span class="color-var">green-6</span>
                       <span class="color-hex">#73D13D</span>
                     </div>
                     <div class="color-cell">
                       <div class="color-cell-bg" style="background-color: var(--iv-green-7)"></div>
+                      <span class="color-var">green-7</span>
                       <span class="color-hex">#52C41A</span>
                     </div>
                     <div class="color-cell">
                       <div class="color-cell-bg" style="background-color: var(--iv-green-8)"></div>
+                      <span class="color-var">green-8</span>
                       <span class="color-hex">#389E0D</span>
                     </div>
                     <div class="color-cell">
                       <div class="color-cell-bg" style="background-color: var(--iv-green-9)"></div>
+                      <span class="color-var">green-9</span>
                       <span class="color-hex">#237804</span>
                     </div>
                   </div>
@@ -737,42 +889,52 @@
                   <div class="color-palette-panel">
                     <div class="color-cell">
                       <div class="color-cell-bg" style="background-color: var(--iv-yellow-0)"></div>
+                      <span class="color-var">yellow-0</span>
                       <span class="color-hex">#FFFBE6</span>
                     </div>
                     <div class="color-cell">
                       <div class="color-cell-bg" style="background-color: var(--iv-yellow-1)"></div>
+                      <span class="color-var">yellow-1</span>
                       <span class="color-hex">#FFF9D0</span>
                     </div>
                     <div class="color-cell">
                       <div class="color-cell-bg" style="background-color: var(--iv-yellow-2)"></div>
+                      <span class="color-var">yellow-2</span>
                       <span class="color-hex">#FFF3BF</span>
                     </div>
                     <div class="color-cell">
                       <div class="color-cell-bg" style="background-color: var(--iv-yellow-3)"></div>
+                      <span class="color-var">yellow-3</span>
                       <span class="color-hex">#FFEC99</span>
                     </div>
                     <div class="color-cell">
                       <div class="color-cell-bg" style="background-color: var(--iv-yellow-4)"></div>
+                      <span class="color-var">yellow-4</span>
                       <span class="color-hex">#FFE066</span>
                     </div>
                     <div class="color-cell">
                       <div class="color-cell-bg" style="background-color: var(--iv-yellow-5)"></div>
+                      <span class="color-var">yellow-5</span>
                       <span class="color-hex">#FFD43b</span>
                     </div>
                     <div class="color-cell">
                       <div class="color-cell-bg" style="background-color: var(--iv-yellow-6)"></div>
+                      <span class="color-var">yellow-6</span>
                       <span class="color-hex">#FCC419</span>
                     </div>
                     <div class="color-cell">
                       <div class="color-cell-bg" style="background-color: var(--iv-yellow-7)"></div>
+                      <span class="color-var">yellow-7</span>
                       <span class="color-hex">#FAB005</span>
                     </div>
                     <div class="color-cell">
                       <div class="color-cell-bg" style="background-color: var(--iv-yellow-8)"></div>
+                      <span class="color-var">yellow-8</span>
                       <span class="color-hex">#F59F00</span>
                     </div>
                     <div class="color-cell">
                       <div class="color-cell-bg" style="background-color: var(--iv-yellow-9)"></div>
+                      <span class="color-var">yellow-9</span>
                       <span class="color-hex">#F08C00</span>
                     </div>
                   </div>
@@ -787,42 +949,52 @@
                   <div class="color-palette-panel">
                     <div class="color-cell">
                       <div class="color-cell-bg" style="background-color: var(--iv-orange-0)"></div>
+                      <span class="color-var">orange-0</span>
                       <span class="color-hex">#FFF4E6</span>
                     </div>
                     <div class="color-cell">
                       <div class="color-cell-bg" style="background-color: var(--iv-orange-1)"></div>
+                      <span class="color-var">orange-1</span>
                       <span class="color-hex">#FFE8CC</span>
                     </div>
                     <div class="color-cell">
                       <div class="color-cell-bg" style="background-color: var(--iv-orange-2)"></div>
+                      <span class="color-var">orange-2</span>
                       <span class="color-hex">#FFD8A8</span>
                     </div>
                     <div class="color-cell">
                       <div class="color-cell-bg" style="background-color: var(--iv-orange-3)"></div>
+                      <span class="color-var">orange-3</span>
                       <span class="color-hex">#FFC078</span>
                     </div>
                     <div class="color-cell">
                       <div class="color-cell-bg" style="background-color: var(--iv-orange-4)"></div>
+                      <span class="color-var">orange-4</span>
                       <span class="color-hex">#FFA94D</span>
                     </div>
                     <div class="color-cell">
                       <div class="color-cell-bg" style="background-color: var(--iv-orange-5)"></div>
+                      <span class="color-var">orange-5</span>
                       <span class="color-hex">#FF922B</span>
                     </div>
                     <div class="color-cell">
                       <div class="color-cell-bg" style="background-color: var(--iv-orange-6)"></div>
+                      <span class="color-var">orange-6</span>
                       <span class="color-hex">#FD7E14</span>
                     </div>
                     <div class="color-cell">
                       <div class="color-cell-bg" style="background-color: var(--iv-orange-7)"></div>
+                      <span class="color-var">orange-7</span>
                       <span class="color-hex">#F76707</span>
                     </div>
                     <div class="color-cell">
                       <div class="color-cell-bg" style="background-color: var(--iv-orange-8)"></div>
+                      <span class="color-var">orange-8</span>
                       <span class="color-hex">#E8590C</span>
                     </div>
                     <div class="color-cell">
                       <div class="color-cell-bg" style="background-color: var(--iv-orange-9)"></div>
+                      <span class="color-var">orange-9</span>
                       <span class="color-hex">#D9480F</span>
                     </div>
                   </div>
@@ -901,13 +1073,9 @@
             </div>
 
             <div style="margin-bottom: 2rem;">
-              <h6 class="section-subtitle">Font Family</h6>
-              <p>IVORY doesn't provide any font family by default. It gives you the flexibility to have your preferred font family in your web page.</p>
-            </div>
-
-            <div style="margin-bottom: 2rem;">
-              <h6 class="section-subtitle">Font Weight</h6>
-              <p>As IVORY doesn't provide any default font family, it doesn't apply any font-weight in the typography. But IVORY provides the below CSS utility classes for font-weight.</p>
+              <h6 class="section-subtitle">Font Family & Font Weight</h6>
+              <p>IVORY gives you the flexibility to have your preferred font family in your web page.</p>
+              <p>IVORY doesn't apply any font-weight in the typography. But provides the below CSS utility classes for font-weight.</p>
               <div class="type-system">
                 <table>
                   <thead>
@@ -918,39 +1086,39 @@
                   </thead>
                   <tbody>
                     <tr>
-                      <td><span>.text-100</span></td>
+                      <td><span>text-100</span></td>
                       <td><span>100</span></td>
                     </tr>
                     <tr>
-                      <td><span>.text-200</span></td>
+                      <td><span>text-200</span></td>
                       <td><span>200</span></td>
                     </tr>
                     <tr>
-                      <td><span>.text-300</span></td>
+                      <td><span>text-300</span></td>
                       <td><span>300</span></td>
                     </tr>
                     <tr>
-                      <td><span>.text-400</span></td>
+                      <td><span>text-400</span></td>
                       <td><span>400</span></span></td>
                     </tr>
                     <tr>
-                      <td><span>.text-500</span></td>
+                      <td><span>text-500</span></td>
                       <td><span>500</span></td>
                     </tr>
                     <tr>
-                      <td><span>.text-600</span></td>
+                      <td><span>text-600</span></td>
                       <td><span>600</span></td>
                     </tr>
                     <tr>
-                      <td><span>.text-700</span></td>
+                      <td><span>text-700</span></td>
                       <td><span>700</span></td>
                     </tr>
                     <tr>
-                      <td><span>.text-800</span></td>
+                      <td><span>text-800</span></td>
                       <td><span>800</span></td>
                     </tr>
                     <tr>
-                      <td><span>.text-900</span></td>
+                      <td><span>text-900</span></td>
                       <td><span>900</span></td>
                     </tr>
                   </tbody>
@@ -2226,66 +2394,49 @@
             <div style="margin-bottom: 2rem;">
               <p>A tooltip provides a short details about a specific text or element on the UI in a pop-over. The tip is shown on mouse enter,
                 and is hidden on mouse leave. The Tooltip doesn't support complex text or operations.</p>
-
-              <h6>Tooltip Directions:</h6>
-              <p>IVORY tooltip supports 8 directions, defined by using one of the following classes with the <code>.tooltip-content</code>
-                class:<br/>
-                <code>.top</code><br/>
-                <code>.right</code><br/>
-                <code>.bottom</code><br/>
-                <code>.left</code><br/>
-                <code>.top-left</code><br/>
-                <code>.top-right</code><br/>
-                <code>.bottom-right</code><br/>
-                <code>.bottom-left</code>
-              </p>
-
-              <h6>Tooltip Size:</h6>
-              <p>The size of the tooltip content box can be changed. IVORY provides 3 different sizes, with the following classes:<br/>
-                <code>.tooltip-xs</code><br/>
-                <code>.tooltip-md</code><br/>
-                <code>.tooltip-lg</code>
-              </p>
             </div>
+
+            <h4>Tooltip Directions:</h4>
+            <p>With IVORY you can show a tooltip in 8 different directions.</p>
 
             <h6>Example:</h6>
             <div style="margin-bottom: 2rem;">
-              <p>Here is an example for top tooltip. <a class="iv-tooltip">Hover me <span class="tooltip-content tooltip-xs top">A tooltip provides a short description of a
+              <p>I'm using <code>.tooltip-top</code> class. <a class="iv-tooltip">Hover me <span class="tooltip-content tooltip-sm tooltip-top">A tooltip provides a short description of a
                 UI element.</span></a> to preview.</p>
             </div>
 
             <div style="margin-bottom: 2rem;">
-              <p>Here is an example for bottom tooltip. <a class="iv-tooltip">Hover me <span class="tooltip-content tooltip-xs bottom">A tooltip provides a short description of a
+              <p>I'm using <code>.tooltip-bottom</code> class. <a class="iv-tooltip">Hover me <span class="tooltip-content tooltip-sm tooltip-bottom">A tooltip provides a short description of a
                 UI element.</span></a> to preview.</p>
             </div>
 
             <div style="margin-bottom: 2rem;">
-              <p>Here is an example for left tooltip. <a class="iv-tooltip">Hover me <span class="tooltip-content tooltip-xs left">A tooltip provides a short description of a
+              <p>I'm using <code>.tooltip-left</code> class. <a class="iv-tooltip">Hover me <span class="tooltip-content tooltip-sm tooltip-left">A tooltip provides a short description of a
                 UI element.</span></a> to preview.</p>
             </div>
 
             <div style="margin-bottom: 2rem;">
-              <p>Here is an example for right tooltip. <a class="iv-tooltip">Hover me <span class="tooltip-content tooltip-xs right">A tooltip provides a short description of a
+              <p>I'm using <code>.tooltip-right</code> class. <a class="iv-tooltip">Hover me <span class="tooltip-content tooltip-sm tooltip-right">A tooltip provides a short description of a
                 UI element.</span></a> to preview.</p>
             </div>
 
             <div style="margin-bottom: 2rem;">
-              <p>Here is an example for top-left tooltip. <a class="iv-tooltip">Hover me <span class="tooltip-content tooltip-top-left tooltip-xs">A tooltip provides a short description of a
+              <p>I'm using <code>.tooltip-top-left</code> class. <a class="iv-tooltip">Hover me <span class="tooltip-content tooltip-top-left tooltip-sm">A tooltip provides a short description of a
                 UI element.</span></a> to preview.</p>
             </div>
 
             <div style="margin-bottom: 2rem;">
-              <p>Here is an example for top-right tooltip. <a class="iv-tooltip">Hover me <span class="tooltip-content tooltip-top-right tooltip-xs">A tooltip provides a short description of a
+              <p>I'm using <code>.tooltip-top-right</code> class. <a class="iv-tooltip">Hover me <span class="tooltip-content tooltip-top-right tooltip-sm">A tooltip provides a short description of a
                 UI element.</span></a> to preview.</p>
             </div>
 
             <div style="margin-bottom: 2rem;">
-              <p>Here is an example for bottom-right tooltip. <a class="iv-tooltip">Hover me <span class="tooltip-content tooltip-bottom-right tooltip-xs">A tooltip provides a short description of a
+              <p>I'm using <code>.tooltip-bottom-right</code> class. <a class="iv-tooltip">Hover me <span class="tooltip-content tooltip-bottom-right tooltip-sm">A tooltip provides a short description of a
                 UI element.</span></a> to preview.</p>
             </div>
 
             <div style="margin-bottom: 2rem;">
-              <p>Here is an example for bottom-left tooltip. <a class="iv-tooltip">Hover me <span class="tooltip-content tooltip-bottom-left tooltip-xs">A tooltip provides a short description of a
+              <p>I'm using <code>.tooltip-bottom-left</code> class. <a class="iv-tooltip">Hover me <span class="tooltip-content tooltip-bottom-left tooltip-sm">A tooltip provides a short description of a
                 UI element.</span></a> to preview.</p>
             </div>
 
@@ -2301,6 +2452,52 @@
               </pre>
             </div>
 
+            <h4>Tooltip Size:</h4>
+            <p>IVORY provides tooltips in 4 different sizes, with the following classes: </p>
+            <div class="type-system" style="max-width: 600px;">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Class</th>
+                    <th>Size</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <p><code>tooltip-xs</code></p>
+                    </td>
+                    <td>
+                      <p>10rem</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p><code>tooltip-sm</code></p>
+                    </td>
+                    <td>
+                      <p>15rem</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p><code>tooltip-md</code></p>
+                    </td>
+                    <td>
+                      <p>20rem</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p><code>tooltip-lg</code></p>
+                    </td>
+                    <td>
+                      <p>25rem</p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
         </section>
 
