@@ -1,4 +1,3 @@
-
 .main-head {
   display: block;
   position: relative;
@@ -141,7 +140,6 @@
   margin: 0 auto;
   padding: 32px 0;
 }
-
 @media only screen and (max-width: 768px) {
   .hero .inner {
     padding: 24px 0;
@@ -150,11 +148,6 @@
     display: none;
   }
 }
-
-@media only screen and (max-width: 960px) {
-
-}
-
 @media only screen and (max-width: 1080px) {
   .hero .inner {
     padding: 24px 0;
