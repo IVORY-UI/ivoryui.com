@@ -1695,11 +1695,22 @@
         <section id="grid" class="docs-section">
           <h1 class="section-title">Grid</h1>
           <div class="section-body">
-            <p>IVORY provides a 12-column mobile first grid system built with flexbox and is fully responsive.</p>
-
-            <p>The below examples will give you an idea of how to build Flexbox grid structure using IVORY.</p>
+            <h6 class="section-subtitle">Simplest grid system</h6>
+            <p>Add the as many <span class="code">col</span> elements as you want, to a <span class="code">row</span> container. No matter
+              how many you've added, IVORY just create the equal width columns in the row.
+            <div class="example-grid">
+              <div class="row">
+                <div class="col">one</div>
+                <div class="col">Two</div>
+                <div class="col">Three</div>
+                <div class="col">Four</div>
+                <div class="col">Five</div>
+              </div>
+            </div>
 
             <h6 class="section-subtitle">Basic Grid</h6>
+            <p>IVORY provides a 12-column mobile first grid system. The below example will give you an idea of how to build Flexbox grid structure
+              using IVORY.</p>
             <div class="example-grid">
               <div class="row">
                 <div class="col-12 col-md-1">One</div>
@@ -1758,7 +1769,7 @@
               </pre>
             </div>
 
-            <h6 class="section-subtitle">Gutter</h6>
+            <h6 class="section-subtitle">Don't want the gutter?</h6>
             <p>IVORY grid has the gutter width	of 30px i.e. 15px on each side of a column. IVORY also provides the gutter
               less grid system. To avail the gutter less grid layout, add <span class="code">.no-gutter</span> class to the row
               container.</p>
@@ -1784,21 +1795,7 @@
               </div>
             </div>
 
-            <h6 class="section-subtitle">Equal Width Columns</h6>
-            <p>You no need do much, to create the equal width columns. It's became more simpler with IVORY. In a row just create
-              the <span class="code">div</span>s with <span class="code">.col</span> class. How many <span class="code">div</span>s
-              you create, those number of equal width columns will be created.</p>
-            <div class="example-grid">
-              <div class="row">
-                <div class="col">one</div>
-                <div class="col">Two</div>
-                <div class="col">Three</div>
-                <div class="col">Four</div>
-                <div class="col">Five</div>
-              </div>
-            </div>
-
-            <div style="margin-bottom: 2rem;">
+            <div class="mb-2">
               <pre>
                 <code>
                   &lt;div class="row"&gt;<br/>
@@ -1813,20 +1810,96 @@
             </div>
 
 
-            <h6 class="section-subtitle">Responsive</h6>
-            <p>The breakpoints of responsive grid as below:</p>
+            <h6 class="section-subtitle">Breakpoints</h6>
+            <p>As IVORY focuses mobile first, it provides you the standard and universally followed 6 breakpoints for responsive grid:</p>
 
-            <p>Extra small devices (portrait phones, less than 576px) <br/>
-              No media query since this is the default</p>
+            <div class="mb-2">
+              <pre>
+                <code>
+                  // Extra small devices (portrait phones, less than 576px)<br/>
+                  No media query since this is the default<br/>
+                  &nbsp;<br/>
+                  // Small devices (landscape phones, 576px and up)<br/>
+                  @media (min-width: 576px) { ... }<br/>
+                  &nbsp;<br/>
+                  // Medium devices (tablets, 768px and up)<br />
+                  @media (min-width: 768px) { ... }<br />
+                  &nbsp;<br/>
+                  // Large devices (desktops, 992px and up)<br />
+                  @media (min-width: 992px) { ... }<br />
+                  &nbsp;<br/>
+                  // X-Large devices (large desktops, 1200px and up)<br />
+                  @media (min-width: 1200px) { ... }<br />
+                  &nbsp;<br/>
+                  // XX-Large devices (larger desktops, 1400px and up)<br />
+                  @media (min-width: 1400px) { ... }
+                </code>
+              </pre>
+            </div>
 
-            <p>Small devices (landscape phones, 576px and up) <br/>
-              <pre><code>@media (min-width: 576px) { ... }</code></pre></p>
+            <p>Each breakpoint was chosen to comfortably hold containers whose widths are multiples of 12. Use the following class infix to avail
+            the responsive column for the targeted device size.</p>
 
-            <p>Medium devices (tablets, 768px and up) <br />
-              <pre><code>@media (min-width: 768px) { ... }</code></pre></p>
+            <div class="type-system mb-2">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Breakpoint</th>
+                    <th>IVORY Class infix</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <p>&lt;576px</p>
+                    </td>
+                    <td>
+                      <p>None</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p>&GreaterEqual;576px</p>
+                    </td>
+                    <td><code>sm</code></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p>&GreaterEqual;768px</p>
+                    </td>
+                    <td><code>md</code></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p>&GreaterEqual;992px</p>
+                    </td>
+                    <td><code>lg</code></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p>&GreaterEqual;1200px</p>
+                    </td>
+                    <td><code>xl</code></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p>&GreaterEqual;1400px</p>
+                    </td>
+                    <td><code>xxl</code></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
 
-            <p>Large devices (large desktops, 1200px and up) <br/>
-              <pre><code>@media (min-width: 1200px) { ... }</code></pre></p>
+            <div class="mb-2">
+              <pre>
+                <code>
+                  &lt;div class="col-xxl-1 col-xl-2 col-lg-3 col-md-4 col-sm-6 col"&gt;<br/>
+                  ...<br/>
+                  &lt;/div&gt;
+                </code>
+              </pre>
+            </div>
 
           </div>
         </section>
