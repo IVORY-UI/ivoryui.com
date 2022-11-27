@@ -288,10 +288,24 @@ pre {
 .start-guide-right {
   padding-left: 2rem;
 }
+.start-guide-right pre {
+  width: 500px;
+}
 code {
 	font-family: 'Fira Code', monospace;
 }
-
+@media only screen and (max-width: 768px) {
+  .getstart .border-left {
+    border-left: none;
+  }
+  .start-guide-left, .start-guide-right {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .start-guide-right pre {
+    width: 340px;
+  }
+}
 @media only screen and (max-width: 960px) {
 	.burger-container {
 		position: absolute;
@@ -384,4 +398,7 @@ code {
 		padding-left: 1rem;
 		padding-right: 1rem;
 	}
+}
+@media only screen and (max-width: 1080px) {
+
 }
