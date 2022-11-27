@@ -147,6 +147,9 @@
   .evolve .feat-stack {
     display: none;
   }
+  .no-show-small-screen {
+    display: none;
+  }
 }
 @media only screen and (max-width: 1080px) {
   .hero .inner {
