@@ -140,6 +140,14 @@
   margin: 0 auto;
   padding: 32px 0;
 }
+.text-mktg {
+  background: -webkit-linear-gradient(-70deg, #2188ff 0%, #804eda 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
 @media only screen and (max-width: 768px) {
   .hero .inner {
     padding: 24px 0;
