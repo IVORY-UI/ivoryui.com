@@ -1,51 +1,19 @@
-.github-link {
-  position: fixed;
-  top: 1.5rem;
-	right: 2.5rem;
-}
-.github-link i {
-	display: inline-block;
-  position: relative;
-  top: 4px;
-	width: 22px;
-	height: 22px;
-}
-.github-link a {
-  display: block;
-  text-decoration: none;
-  color: #868E96;
-  padding: 4px 12px;
-  border: 1px solid #868E96;
-  border-radius: 24px;
-}
-.github-link:hover a {
-  color: #495057;
-}
-.github-link span {
-  font-size: 16px;
-  line-height: 28px;
-}
-.github-link svg {
-	fill: #868E96;
-}
-.github-link:hover svg {
-	fill: #495057;
-}
 .docs-wrapper {
 	position: relative;
 	display: flex;
+	top: 82px;
 }
 .doc-nav {
 	position: fixed;
 	width: 280px;
-	height: 100vh;
-	padding: 2rem 0;
+	height: calc(100vh - 82px);
+	padding: 1rem 0;
 	overflow-y: scroll;
+	overflow-x: hidden;
 }
 .doc-nav nav {
 	width: 100%;
 	height: auto;
-	border-right: 1px solid var(--iv-gray-3);
 }
 .doc-nav .nav-section {
   margin-bottom: 1rem;
@@ -213,7 +181,7 @@ pre {
 	border-radius: 0.25rem;
 	max-height: 360px;
 	white-space: nowrap;
-	overflow: scroll;
+	overflow: auto;
 }
 .timeline {
 	position: relative;
@@ -293,6 +261,11 @@ pre {
 }
 code {
 	font-family: 'Fira Code', monospace;
+}
+.text-mono {
+	font-family: 'Fira Code', monospace;
+	font-size: 13px;
+	font-weight: 400;
 }
 @media only screen and (max-width: 768px) {
   .getstart .border-left {
