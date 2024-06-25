@@ -13,9 +13,25 @@
 .avatar a {
   cursor: pointer;
 }
+.avatar a:hover {
+  text-decoration: none;
+}
 .avatar img {
   width: 32px;
 }
+.avatar span {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  height: 32px;
+  line-height: 32px;
+  margin-left: 4px;
+  font-size: 21px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #000;
+}
+
 .hero {
   position: relative;
   border-bottom: 1px solid #000;
@@ -40,22 +56,8 @@
   flex-direction: row;
   justify-content: center;
 }
-.guided .nav-item {
-  margin-right: 30px;
-  text-decoration: none;
-  line-height: 32px;
-  border-radius: 16px;
-  padding: 0 16px;
-  font-size: 14px;
-  font-weight: 500;
-  border: 1px solid #425C79;
-  color: #425C79;
-}
-.guided .nav-item:hover{
-  background-color: #425C79;
-  color: #fff;
-}
-.feature-tiles {
+
+/* .feature-tiles {
   position: relative;
   padding: 64px 0;
 }
@@ -66,7 +68,8 @@
 }
 .feature-tiles h5 {
   color: #415C7A;
-}
+} */
+
 .evolve {
   position: relative;
   border-bottom: 1px solid #000;
